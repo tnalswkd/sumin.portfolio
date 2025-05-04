@@ -3,6 +3,7 @@ import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 import localFont from "next/font/local";
 import { ThemeProvider } from "./_libs/provider/themeProvider";
+import "./_styles/globals.css";
 
 const pretendard = localFont({
   src: "./_styles/fonts/PretendardVariable.woff2",
@@ -25,6 +26,7 @@ export default function RootLayout({
         >
           <main className="flex flex-col">
             <Header />
+          
             {children}
           </main>
         </ThemeProvider>
