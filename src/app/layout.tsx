@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={pretendard.className} suppressHydrationWarning>
-      <body className="max-w-screen-md min-w-[320px] mx-auto">
+      <body className="min-w-[320px] mx-auto">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -26,7 +26,7 @@ export default function RootLayout({
         >
           <main className="flex flex-col">
             <Header />
-          
+
             {children}
           </main>
         </ThemeProvider>
