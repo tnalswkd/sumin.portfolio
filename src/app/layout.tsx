@@ -4,6 +4,8 @@ import Header from "./_components/Header";
 import localFont from "next/font/local";
 import { ThemeProvider } from "./_libs/provider/themeProvider";
 import "./_styles/globals.css";
+import "@radix-ui/themes/styles.css";
+import { Theme as RadixTheme } from "@radix-ui/themes";
 
 const pretendard = localFont({
   src: "./_styles/fonts/PretendardVariable.woff2",
@@ -17,18 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={pretendard.className} suppressHydrationWarning>
-      <body className="min-w-[320px] mx-auto">
+      <body className="min-w-[320px] mx-auto light">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex flex-col">
-            <Header />
+          <RadixTheme>
+            <main className="flex flex-col">
+              <Header />
 
-            {children}
-          </main>
+              {children}
+            </main>
+          </RadixTheme>
         </ThemeProvider>
         <Footer />
       </body>
