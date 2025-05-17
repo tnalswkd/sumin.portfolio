@@ -7,7 +7,10 @@ const Hero = () => {
       id="hero"
       className="h-screen w-full flex flex-col items-center justify-center gap-4"
     >
-      <Text className="text-[54px] text-[var(--gray-dark-1)] font-extrabold p-[24px]">
+      <Text
+        size="9"
+        className="text-[var(--gray-dark-1)] font-extrabold p-[24px]"
+      >
         Hi there! I'm Sumin Lee.
       </Text>
       <Text
@@ -32,7 +35,7 @@ const Hero = () => {
             GitHub
           </a>
           <a
-            href="https://github.com/tnalswkd"
+            href="mailto:tnalswkd1122@naver.com"
             target="_blank"
             className="px-[14px] py-[10px] rounded-md border text-black hover:bg-[var(--gray-2)] transition"
           >
