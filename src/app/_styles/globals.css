@@ -1,3 +1,12 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/green.css";
+@import "@radix-ui/colors/red.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/blue-dark.css";
+@import "@radix-ui/colors/green-dark.css";
+@import "@radix-ui/colors/red-dark.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,12 +36,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 body[data-theme="light"] {
   --background: #ffffff;
   --foreground: #bdc1c9;
 }
-
 
 body[data-theme="dark"] {
   --background: #0a0a0a;
