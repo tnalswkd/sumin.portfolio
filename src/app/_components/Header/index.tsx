@@ -14,10 +14,7 @@ const Header = () => {
         </div>
         {/* 오른쪽: 네비게이션 */}
         <nav className="flex items-center space-x-6">
-          <a href="#about-me" className="text-sm text-[var(--gray-dark-1)]">
-            About me
-          </a>
-          <a href="#" className="text-sm text-[var(--gray-dark-1)]">
+          <a href="#skills" className="text-sm text-[var(--gray-dark-1)]">
             Skills
           </a>
           <a href="#" className="text-sm text-[var(--gray-dark-1)]">
