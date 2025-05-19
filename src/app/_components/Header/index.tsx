@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <div className="flex items-center space-x-2">
           <span className="text-2xl">🐰</span>
-          <a href="#hero">
+          <a href="/">
             <Text size="3" weight="bold" className="text-[var(--gray-dark-1)]">
               Sumin
             </Text>
@@ -17,7 +17,7 @@ const Header = () => {
           <a href="#skills" className="text-sm text-[var(--gray-dark-1)]">
             Skills
           </a>
-          <a href="#" className="text-sm text-[var(--gray-dark-1)]">
+          <a href="/works" className="text-sm text-[var(--gray-dark-1)]">
             Projects
           </a>
           <a href="#" className="text-sm text-[var(--gray-dark-1)]">
