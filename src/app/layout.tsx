@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "./_libs/provider/themeProvider";
 import "./_styles/globals.css";
 import "@radix-ui/themes/styles.css";
-import { Theme as RadixTheme } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes";
 
 const pretendard = localFont({
   src: "./_styles/fonts/PretendardVariable.woff2",
@@ -26,13 +26,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <RadixTheme>
+          <Theme>
             <main className="flex flex-col">
               <Header />
 
               {children}
             </main>
-          </RadixTheme>
+          </Theme>
         </ThemeProvider>
         <Footer />
       </body>

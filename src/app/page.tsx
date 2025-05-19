@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Hero from "./(route)/hero/page";
-import AboutMe from "./(route)/about-me/page";
 import Skills from "./(route)/skills/page";
 export default function Home() {
   return (
