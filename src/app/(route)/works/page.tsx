@@ -1,28 +1,38 @@
 "use client";
+import { Text } from "@radix-ui/themes";
 
 const Works = () => {
   return (
     <div
       id="works"
-      className="h-screen w-full flex items-center justify-center gap-4 px-8"
+      className="h-screen w-full flex items-center justify-center"
     >
-      <aside className="p-6 bg-[#f0f7ff] min-w-[300px] grid grid-cols-1 gap-4">
-        <nav className="flex flex-col gap-4">
+      <aside className="min-w-[300px] grid grid-cols-1 gap-4">
+        <nav className="flex flex-col gap-2  h-full">
           <h3 className="font-medium text-lg">Projects</h3>
-          <a href="#project1" className="text-blue-600 hover:underline">
+          <Text
+            size="2"
+            className="hover:underline text-[--gray-9] cursor-pointer"
+          >
             Kurv
-          </a>
-          <a href="#project2" className="text-blue-600 hover:underline">
+          </Text>
+          <Text
+            size="2"
+            className="hover:underline text-[--gray-9] cursor-pointer"
+          >
             Odiin
-          </a>
-          <a href="#project3" className="text-blue-600 hover:underline">
+          </Text>
+          <Text
+            size="2"
+            className="hover:underline text-[--gray-9] cursor-pointer"
+          >
             ATADIN
-          </a>
+          </Text>
         </nav>
       </aside>
 
       {/* 메인 콘텐츠 */}
-      <main className="p-8 grid grid-cols-1 gap-4">
+      <main className="grid grid-cols-1 gap-4 w-[50%]">
         <h1 className="text-3xl font-bold mb-6">작업물</h1>
 
         <section id="project1" className="mb-12">
